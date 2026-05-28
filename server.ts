@@ -15,6 +15,7 @@ dotenv.config();
 async function startServer() {
   const app = express();
   const PORT = 3000;
+  const BASE_PATH = process.env.BASE_PATH || '';
 
   // Body parsers
   app.use(express.json());
@@ -98,11 +99,11 @@ async function startServer() {
       server: { middlewareMode: true },
       appType: 'spa',
     });
-    app.use(vite.middlewares);
+    app.use(BASE_PATH, vite.middlewares);
   } else {
     const distPath = path.join(process.cwd(), 'dist');
-    app.use(express.static(distPath));
-    app.get('*', (req, res) => {
+    app.use(BASE_PATH, express.static(distPath));
+    app.get(`${BASE_PATH}*`, (req, res) => {
       res.sendFile(path.join(distPath, 'index.html'));
     });
   }

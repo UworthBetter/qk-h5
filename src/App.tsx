@@ -68,7 +68,7 @@ export default function App() {
   };
 
   const renderLogo = () => (
-    <img src="/logo-qkyd-wide.png" alt="耆康云盾" className="h-9 object-contain shrink-0" />
+    <img src="/mobile/logo-qkyd-wide.png" alt="耆康云盾" className="h-9 object-contain shrink-0" />
   );
 
   return (

@@ -42,7 +42,7 @@ export const mockElders: Elder[] = [
     role: '长者',
     room: '朝阳社区2号楼201',
     checkInDate: '2023-06-12',
-    avatar: '/avatar-zhang.png',
+    avatar: '/mobile/avatar-zhang.png',
     metrics: {
       heartRate: {
         current: 72,

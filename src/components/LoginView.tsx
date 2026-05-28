@@ -52,7 +52,7 @@ export default function LoginView({ onLogin }: LoginViewProps) {
           className="flex flex-col items-center"
         >
           <div className="mb-5">
-            <img src="/logo-qkyd-wide.png" alt="耆康云盾" className="h-16 object-contain" />
+            <img src="/mobile/logo-qkyd-wide.png" alt="耆康云盾" className="h-16 object-contain" />
           </div>
           <h1 className="text-2xl font-bold text-gray-800 tracking-tight">耆安云盾</h1>
           <p className="text-xs text-gray-400 mt-2 font-light">守护长者健康 · 关爱每一天</p>
